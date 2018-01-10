@@ -1,0 +1,16 @@
+<html>
+<head>
+<script src="angular.min.js"></script>
+<body ng-app="myapp">
+<script>
+var app=angular.module("myapp",[]);
+app.controller("mycntrlr",function($scope){
+$scope.name="Anonymous";
+});
+</script>
+<div ng-controller="mycntrlr">
+Enter your name:<input type="text" ng-model="name"/>
+Hello, {{name}}
+</div>	
+</body>
+</html>

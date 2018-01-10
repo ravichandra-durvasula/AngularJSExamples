@@ -1,0 +1,15 @@
+<html>
+<head>
+<script src="angular.min.js"></script>
+<body ng-app="Firstapp">
+<script>
+var app=angular.module("Firstapp",[]);
+app.controller("FirstCntrlr",function($scope){
+$scope.name="This is a first Angular JS Code!!!";
+});
+</script>
+<p ng-controller="FirstCntrlr">
+{{name}}
+</p>	
+</body>
+</html>
